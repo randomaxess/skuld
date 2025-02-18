@@ -1,3 +1,4 @@
+import os
 import click
 from .config import load_config
 from .migration import create_migration_file
