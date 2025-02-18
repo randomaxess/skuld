@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skuld"
+version = "0.1.0"
+description = "A CLI tool for creating SQL migration files."
+authors = [{ name = "Jacob Bennike", email = "GitStompa@protonmail.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "msgspec",
+    "click",
+]
+
+[project.scripts]
+sql-migration-tool = "skuld.cli:create_migration"
